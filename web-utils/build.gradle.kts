@@ -2,16 +2,13 @@ plugins {
     application
 }
 
-group = "org.gradle.kotlin.dsl.samples.composite-builds"
+group = "xyz.twocucao.mermaids.cli"
 version = "1.0"
 
 application {
-    mainClassName = "cli.Main"
+    mainClassName = "xyz.twocucao.mermaids.cli.CliKt"
 }
 
-dependencies {
-    compile("composite-builds:core:1.0")
-}
 
 repositories {
     jcenter()

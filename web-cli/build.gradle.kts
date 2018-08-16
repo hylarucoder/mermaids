@@ -2,15 +2,11 @@ plugins {
     application
 }
 
-group = "xyz.twocucao.mermaids.web-cli"
+group = "xyz.twocucao.mermaids.webcli"
 version = "1.0"
 
 application {
-    mainClassName = "cli.Main"
-}
-
-dependencies {
-    compile("mermaids:web-core:1.0")
+    mainClassName = "xyz.twocucao.mermaids.cli.CliKt"
 }
 
 repositories {
