@@ -32,6 +32,7 @@ tasks.withType<KotlinCompile> {
     }
 }
 
+
 tasks {
 
     getByName<BootJar>("bootJar") {
@@ -52,7 +53,8 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-jpa:2.0.4.RELEASE")
     compile("org.springframework.boot:spring-boot-starter-web:2.0.4.RELEASE")
     compile("org.springframework.boot:spring-boot-starter-mustache:2.0.4.RELEASE")
-//    compile("com.fasterxml.jackson.module:jackson-module-kotlin")
+    compile("com.h2database:h2:1.4.197")
+    compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.4")
     testCompile("org.springframework.boot:spring-boot-starter-test:2.0.4.RELEASE")
     subprojects.forEach {
         archives(it)

@@ -9,7 +9,7 @@ plugins {
     idea
     eclipse
 
-//    id("io.spring.dependency-management")
+    id("io.spring.dependency-management") version "1.0.6.RELEASE"
     id("org.springframework.boot") version "2.0.4.RELEASE"
     kotlin("jvm") version "1.2.60"
 }
